@@ -1,0 +1,26 @@
+.personal-information th{
+  background-color: rgba(255, 207, 51,0.9);
+  border-radius: 15px 0 0 15px;
+  height: 20px;
+}
+.personal-information tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.personal-information td{
+	background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 0px 15px 15px 0px;
+  height: 20px;
+}
+.personal-information th h1{
+  font-size: 3rem;
+}
+.personal-information{
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+.personal-information .empty{
+  width: 10%;
+  visibility: hidden;
+}

@@ -1,0 +1,35 @@
+.ring:hover::before, .ring:focus::before {
+  opacity: 1;
+}
+
+.ring::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 230%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+  margin-left: 3.5rem;
+}
+
+.ring:hover::after, .ring:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
